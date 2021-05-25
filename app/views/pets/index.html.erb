@@ -1,0 +1,7 @@
+<ol>
+  <% @pets.each do |pet| %>
+    <%= link_to pet_path(pet) do %>
+      <li><%= pet.name %></li>
+    <% end %>
+  <% end %>
+</ol>

@@ -1,0 +1,13 @@
+<div class="offset-sm-3 col-sm-6">
+  <%= simple_form_for pet do |f| %>
+    <%= f.input :name %>
+    <%= f.input :species %>
+    <%= f.input :found_date %>
+    <% unless pet.new_record? %>
+      <%= f.input :name %>
+    <% end %>
+
+    <%= f.submit %>
+  <% end %>
+
+</div>
